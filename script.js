@@ -199,7 +199,7 @@ const CONFIG = {
 
   // --- Section 5: A Letter From Me (Typewriter Animated Letter) ---
   letter: {
-    salutationEnglish: "Dearest Appa,",
+    salutationEnglish: "Dear Appa,",
     salutationTamil: "என் அன்பான அப்பாவுக்கு,",
     body: `Happy 50th Birthday, Appa! (பிறந்த நாள் வாழ்த்துக்கள் அப்பா!)
 
