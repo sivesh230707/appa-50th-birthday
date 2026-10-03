@@ -1,5 +1,7 @@
 # Binaries & Temporary Files
 cloudflared.exe
+gh.zip
+gh_*/
 raw_extracted/
 audio/*.wav
 images/WhatsApp*
