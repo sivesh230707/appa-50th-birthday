@@ -4,11 +4,13 @@ A single-page, mobile-friendly birthday website built with pure **HTML, CSS, and
 
 ---
 
-## 🌐 Live Public Website URL (Accessible from Any Phone or PC)
+## 🌐 Live Website Links
 
-👉 **[https://certification-marcus-receptors-founded.trycloudflare.com](https://certification-marcus-receptors-founded.trycloudflare.com)**
+- **GitHub Repository**: **[https://github.com/sivesh230707/appa-50th-birthday](https://github.com/sivesh230707/appa-50th-birthday)**
+- **GitHub Pages (Free Hosting)**: **[https://sivesh230707.github.io/appa-50th-birthday/](https://sivesh230707.github.io/appa-50th-birthday/)**
+- **Cloudflare Live Tunnel**: **[https://certification-marcus-receptors-founded.trycloudflare.com](https://certification-marcus-receptors-founded.trycloudflare.com)**
 
-*(This live URL is actively running and securely tunneled directly from your PC via Cloudflare. Anyone on any mobile or desktop device worldwide can open it immediately with no passwords or setups required).*
+*(All links are publicly accessible from any smartphone, tablet, or desktop worldwide with no login or setup required).*
 
 ---
 
