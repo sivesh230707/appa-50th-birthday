@@ -205,8 +205,6 @@ const CONFIG = {
 
 Today marks half a century of a life lived with extraordinary dignity, relentless hard work, and endless love. Turning 50 is not just a milestone on a calendar — it is 50 golden years of being the rock our entire family leans on.
 
-Thank you for being my mentor, my best friend, my patient teacher, and the finest example of what a good human being should be. Everything good in me today is a reflection of your guidance and unconditional love.
-
 On your 50th birthday, my only prayer is for your vibrant health, complete peace of mind, endless laughter, and many more decades of golden moments together. 
 
 Stay the same fun, loving, coffee-loving superhero you have always been!`,
