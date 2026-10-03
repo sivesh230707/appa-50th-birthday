@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 50th Birthday, Appa! | Sridhar's Golden Jubilee</title>
+  <meta name="description" content="Celebrating Sridhar's 50th Birthday with love, golden memories, milestones, and family wishes. Made with love by Sivesh.">
+  
+  <!-- Favicon Emoji -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
+
+  <!-- Google Fonts: Elegant Serifs, Clean Body, Noto Sans Tamil, Handwritten Caveat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cinzel:wght@600;700;800;900&family=Noto+Sans+Tamil:wght@400;600;700;800&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+
+  <!-- ==================== FLOATING MUSIC CONTROLLER ==================== -->
+  <div class="floating-music-widget" id="floating-music-btn" title="Click to play celebration music">
+    <div class="music-btn" id="music-icon-btn">🎵</div>
+    <div class="music-info">
+      <span class="music-title">வா ரயில் விட போலாமா</span>
+      <span class="music-sub">Tap to play / pause 🎵</span>
+    </div>
+    <div class="audio-waves">
+      <div class="wave-bar"></div>
+      <div class="wave-bar"></div>
+      <div class="wave-bar"></div>
+    </div>
+  </div>
+
+  <audio id="bg-music-audio" loop preload="auto">
+    <source src="audio/music.mp3" type="audio/mpeg">
+    <source src="audio/music.wav" type="audio/wav">
+  </audio>
+
+
+  <!-- ==================== ANIMATION CANVASES ==================== -->
+  <canvas id="fireworks-canvas"></canvas>
+  <canvas id="confetti-canvas"></canvas>
+
+
+  <!-- ==================== 1. HERO SECTION ==================== -->
+  <section class="hero-section" id="hero">
+    <canvas id="balloon-canvas"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-pill-badge">
+        <span class="sparkle">✨</span>
+        <span>GOLDEN JUBILEE • OCTOBER 3</span>
+        <span class="sparkle">✨</span>
+      </div>
+
+      <div class="hero-tamil-banner">
+        இனிய 50வது பிறந்த நாள் வாழ்த்துக்கள் அப்பா!
+      </div>
+
+      <h1 class="hero-main-title">
+        Happy 50th Birthday,<br>
+        <span class="appa-highlight">Appa!</span>
+      </h1>
+
+      <!-- Shimmering Golden "50" Display -->
+      <div class="golden-50-container">
+        <div class="golden-50-glow"></div>
+        
+        <!-- Traditional Laurel Branch Left -->
+        <svg class="golden-wreath-left" viewBox="0 0 100 160" fill="#D4AF37">
+          <path d="M50,150 C40,110 30,70 60,10 C50,30 20,60 25,100 C28,125 40,140 50,150 Z" opacity="0.6"/>
+          <ellipse cx="35" cy="40" rx="14" ry="7" transform="rotate(-35 35 40)"/>
+          <ellipse cx="25" cy="70" rx="15" ry="8" transform="rotate(-25 25 70)"/>
+          <ellipse cx="25" cy="100" rx="15" ry="8" transform="rotate(-15 25 100)"/>
+          <ellipse cx="32" cy="125" rx="13" ry="7" transform="rotate(-5 32 125)"/>
+        </svg>
+
+        <span class="golden-50-number">50</span>
+
+        <!-- Traditional Laurel Branch Right -->
+        <svg class="golden-wreath-right" viewBox="0 0 100 160" fill="#D4AF37">
+          <path d="M50,150 C40,110 30,70 60,10 C50,30 20,60 25,100 C28,125 40,140 50,150 Z" opacity="0.6"/>
+          <ellipse cx="35" cy="40" rx="14" ry="7" transform="rotate(-35 35 40)"/>
+          <ellipse cx="25" cy="70" rx="15" ry="8" transform="rotate(-25 25 70)"/>
+          <ellipse cx="25" cy="100" rx="15" ry="8" transform="rotate(-15 25 100)"/>
+          <ellipse cx="32" cy="125" rx="13" ry="7" transform="rotate(-5 32 125)"/>
+        </svg>
+      </div>
+
+      <p class="hero-subtitle" style="margin-bottom: 0;">
+        Celebrating 50 golden years of wisdom, unconditional love, family strength, and being our forever superhero — Sridhar.
+      </p>
+    </div>
+  </section>
+
+  <div class="temple-border-bottom"></div>
+
+
+  <!-- ==================== 2. PHOTO GALLERY (POP FIRST) ==================== -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Moments Captured in Time</h2>
+        <p class="section-subtitle">
+          Each picture tells a story of affection, laughter, and timeless celebrations with our favorite man. Tap any photo to expand!
+        </p>
+
+        <div class="festive-divider">
+          <div class="line"></div>
+          <svg class="kolam-icon" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="14" fill="none" stroke="#D4AF37" stroke-width="4"/>
+            <path d="M50 10 L60 40 L90 50 L60 60 L50 90 L40 60 L10 50 L40 40 Z" fill="#D4AF37"/>
+          </svg>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Rendered dynamically from CONFIG.gallery (photo1.jpg - photo8.jpg) -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox-modal">
+    <div class="lightbox-content">
+      <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close photo preview">✕</button>
+      <button class="lightbox-prev-btn" id="lightbox-prev" aria-label="Previous photo">‹</button>
+      <button class="lightbox-next-btn" id="lightbox-next" aria-label="Next photo">›</button>
+
+      <div class="lightbox-image-container">
+        <img src="" alt="Appa's Photo" class="lightbox-img" id="lightbox-img">
+      </div>
+
+      <div class="lightbox-details">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+        <div class="lightbox-counter" id="lightbox-counter"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="temple-border-top"></div>
+
+
+  <!-- ==================== 3. HIS STORY (TIMELINE) ==================== -->
+  <section class="section timeline-section" id="story">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">His Story: A Golden Journey</h2>
+        <p class="section-subtitle">
+          From humble beginnings to the foundation of our family. Here are key milestones from Appa's inspiring journey.
+        </p>
+
+        <div class="festive-divider">
+          <div class="line"></div>
+          <svg class="kolam-icon" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="14" fill="none" stroke="#D4AF37" stroke-width="4"/>
+            <path d="M50 10 L60 40 L90 50 L60 60 L50 90 L40 60 L10 50 L40 40 Z" fill="#D4AF37"/>
+          </svg>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-spine"></div>
+        <div id="timeline-list">
+          <!-- Populated dynamically from CONFIG.timeline in script.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="temple-border-bottom"></div>
+
+
+  <!-- ==================== 4. 50 REASONS WE LOVE YOU ==================== -->
+  <section class="section reasons-section" id="reasons">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">அன்பின் 50 காரணங்கள் • Flip Cards</span>
+        <h2 class="section-title">50 Reasons We Love You</h2>
+        <p class="section-subtitle">
+          Every single day you give us a new reason to smile. Click or tap each card below to flip and read why you are the best dad ever!
+        </p>
+
+        <div class="festive-divider">
+          <div class="line"></div>
+          <svg class="kolam-icon" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="14" fill="none" stroke="#D4AF37" stroke-width="4"/>
+            <path d="M50 10 L60 40 L90 50 L60 60 L50 90 L40 60 L10 50 L40 40 Z" fill="#D4AF37"/>
+          </svg>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <div class="reasons-intro-card">
+        💡 <strong>Interactive Flip Cards:</strong> Tap any card to reveal a memory, dad joke, or heartwarming quality!
+      </div>
+
+      <div class="reasons-grid" id="reasons-grid">
+        <!-- Rendered from CONFIG.reasons in script.js -->
+      </div>
+
+      <div class="reasons-actions">
+        <button class="btn-primary" id="toggle-reasons-btn">
+          <span>Show All 50 Reasons We Love You (40 more) ▼</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="temple-border-bottom"></div>
+
+
+  <!-- ==================== 5. A LETTER FROM ME ==================== -->
+  <section class="section letter-section" id="letter">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" style="background:rgba(212,175,55,0.2); color:var(--color-gold-shimmer);">இதயத்திலிருந்து ஒரு கடிதம்</span>
+        <h2 class="section-title light">A Letter From Me</h2>
+        <p class="section-subtitle light">
+          Written with love and deepest gratitude from Sivesh to Appa.
+        </p>
+
+        <div class="festive-divider">
+          <div class="line" style="background:linear-gradient(90deg, transparent, var(--color-gold), transparent);"></div>
+          <svg class="kolam-icon" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="14" fill="none" stroke="#D4AF37" stroke-width="4"/>
+            <path d="M50 10 L60 40 L90 50 L60 60 L50 90 L40 60 L10 50 L40 40 Z" fill="#D4AF37"/>
+          </svg>
+          <div class="line" style="background:linear-gradient(90deg, transparent, var(--color-gold), transparent);"></div>
+        </div>
+      </div>
+
+      <div class="parchment-container">
+        <div class="parchment-sheet">
+          <div class="parchment-header">
+            <div>
+              <div class="parchment-tamil-salutation">என் அன்பான அப்பாவுக்கு,</div>
+              <div class="parchment-salutation">Dearest Appa,</div>
+            </div>
+            <div class="parchment-seal" title="Gold 50 Seal">
+              50
+            </div>
+          </div>
+
+          <div class="letter-body">
+            <span id="letter-body-text"></span>
+            <span class="typewriter-cursor"></span>
+          </div>
+
+          <div class="parchment-footer">
+            <div class="letter-sign-off">With boundless love and respect,</div>
+            <div class="letter-sender">Sivesh</div>
+            <div class="letter-tamil-sender">அன்புடன் உங்கள் மகன், சிவேஷ்</div>
+          </div>
+        </div>
+
+        <div class="letter-controls">
+          <button class="btn-letter-action" id="btn-replay-letter">🔄 Replay Typewriter</button>
+          <button class="btn-letter-action" id="btn-skip-letter">📖 Show Full Letter</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="temple-border-bottom"></div>
+
+
+  <footer class="site-footer">
+    <div class="container">
+
+
+      <div class="footer-quote">
+        "50 Years of Awesome. A Lifetime of Unconditional Love."
+      </div>
+
+      <div class="footer-tamil">
+        இனிய 50வது பிறந்த நாள் வாழ்த்துக்கள் அப்பா! என்றும் நல்வாழ்வு வாழ்க!
+      </div>
+
+      <p class="footer-credit">
+        Made with endless love <span class="footer-heart">❤️</span> by <strong>Sivesh</strong> for Appa's 50th Birthday
+      </p>
+
+      <button class="btn-top" id="btn-back-to-top">
+        <span>Back to Top</span>
+        <span>⬆️</span>
+      </button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

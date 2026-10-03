@@ -1,0 +1,8 @@
+# Binaries & Temporary Files
+cloudflared.exe
+raw_extracted/
+audio/*.wav
+images/WhatsApp*
+*.log
+.DS_Store
+Thumbs.db
