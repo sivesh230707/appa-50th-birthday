@@ -65,7 +65,7 @@ const CONFIG = {
   ],
 
   // --- Section 3: Photo Gallery Captions ---
-  // Images correspond to images/photo1.jpg through photo8.jpg
+  // Images correspond to images/photo1.jpg through photo12.jpg
   gallery: [
     {
       src: "images/photo1.jpg",
@@ -114,6 +114,30 @@ const CONFIG = {
       title: "50 Years of Being Awesome",
       tamil: "50 பொற்கால ஆண்டுகள்",
       desc: "Cheers to 50 years of greatness and many more golden decades ahead!"
+    },
+    {
+      src: "images/photo9.jpg",
+      title: "Our Entire World",
+      tamil: "எங்கள் உலகம்",
+      desc: "Standing strong together — our family's greatest anchor and guardian."
+    },
+    {
+      src: "images/photo10.jpg",
+      title: "Journey of Companionship",
+      tamil: "அன்பின் பயணம்",
+      desc: "Appa and Amma — partners in every journey, blessing our lives with boundless love."
+    },
+    {
+      src: "images/photo11.jpg",
+      title: "The Favorite Among Kids",
+      tamil: "குடும்பத்தின் பொக்கிஷம்",
+      desc: "Always the warmest center of laughter, storytelling, and joyful gatherings."
+    },
+    {
+      src: "images/photo12.jpg",
+      title: "Festive Joy & Warmth",
+      tamil: "மகிழ்ச்சியான திருநாள்",
+      desc: "Cherished celebrations and timeless family traditions that make a house a home."
     }
   ],
 
