@@ -16,7 +16,7 @@ const CONFIG = {
 
   // --- Tamil & English Hero Headings ---
   hero: {
-    badge: "✨ Golden Jubilee Celebration • 50 Years of Awesome ✨",
+    badge: "Golden Jubilee Celebration • 50 Years of Awesome",
     tamilGreeting: "இனிய 50வது பிறந்த நாள் வாழ்த்துக்கள் அப்பா!",
     tamilPhonetic: "Iniya 50-vadhu Pirandha Naal Vazhthukkal, Appa!",
     mainHeading: "Happy 50th Birthday,",
